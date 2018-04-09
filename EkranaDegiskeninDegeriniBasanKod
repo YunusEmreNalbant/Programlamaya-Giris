@@ -1,0 +1,14 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int sayi;
+            Console.WriteLine("Uğurlu sayınızı giriniz: ");
+            sayi = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Uğurlu sayınız: " + sayi);
+
+            Console.ReadKey(); //ekranda tutmak için.
+
+        }
+    }
