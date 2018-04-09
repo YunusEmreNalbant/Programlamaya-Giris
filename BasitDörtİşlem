@@ -1,0 +1,33 @@
+class Program
+    {
+        static void Main(string[] args)
+        {
+           double sayi1, sayi2, toplama, cıkarma, carpma,bölme, kalan;
+        
+
+
+            Console.WriteLine("1.Sayıyı Giriniz : ");
+            sayi1 = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("2.Sayıyı Giriniz: ");
+            sayi2 = Convert.ToDouble(Console.ReadLine());
+
+            toplama = sayi1 + sayi2;
+            cıkarma= Math.Abs(sayi1-sayi2); // Eksi çıkma ihtimaline karşı sonucun mutlak değerini aldık.
+            carpma = sayi1 * sayi2;
+            bölme = Convert.ToDouble(sayi1 / sayi2);
+            kalan = sayi1 % sayi2;
+
+
+            Console.WriteLine("***** SONUÇLAR *****");
+
+            Console.WriteLine("TOPLAMA: " + toplama);
+            Console.WriteLine("ÇIKARMA: " + cıkarma);
+            Console.WriteLine("ÇARPMA: " + carpma);
+            Console.WriteLine("BÖLME: " + bölme);
+            Console.WriteLine("KALAN: " + kalan);
+
+            Console.ReadKey();
+              
+        }
+    }
